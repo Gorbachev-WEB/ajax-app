@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+span.link{
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    padding: 10px 30px;
+    color: #fff;
+    background: rgb(212,75,56);
+}
+span.link:hover{
+    background: rgb(232,95,76);
+}
+span.link:active{
+    background: rgb(152,15,0);
+}
+.form,
+.countries{
+    border: #b94a48 solid 1px;
+    border-radius: 3px;
+    margin: 30px;
+    padding: 30px;
+}
+.form input{
+    box-sizing: border-box;
+    height: 38px;
+    font-size: 20px;
+    padding: 0 30px;
+    text-align: center;
+    outline: none;
+    width: 250px;
+}
+.countries ol{
+    height: 300px;
+    width: 346px;
+    overflow-y: auto;
+}
+.countries ol li{
+    font-size: 20px;
+    padding: 5px;
+}
+#modal{
+    display: none;
+}
