@@ -1,9 +1,11 @@
 <?php
 
+require_once $_SERVER["DOCUMENT_ROOT"] . "/../config/db.php";
+
 function get_connection(){  // Получить соединение с БД
     static $connection = null;
     if(!$connection){
-        $connection = mysqli_connect("localhost", "root", "", "travel_app");
+        $connection = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
     }
     return $connection;
 }
