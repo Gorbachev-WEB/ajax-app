@@ -30,6 +30,7 @@ $(document).ready(function(){
                     $("#modal").text("Что-то пошло не так, попробуйте ещё раз! Код ошибки: " + json).dialog({ modal: true });
                 }
                 $(".form input").val(""); // Очищаем поле в любом случае
+                $(".countries .link").trigger('click'); // Обновляем список стран
             },
             "json"
         );

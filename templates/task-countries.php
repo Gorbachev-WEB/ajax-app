@@ -3,7 +3,7 @@
     <h2>Список стран:</h2>
     <ol>
         <?php
-        if(is_array($countries)){ // При наличии массива формируем список
+        if(is_array($countries) and count($countries) > 0){ // При наличии массива формируем список
             foreach($countries as $country){
                 echo "<li>$country</li>";
             }
